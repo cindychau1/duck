@@ -14,10 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
+        //j.son() -> object 
         const json = await response.json();
         const arrayOfQuotes = [];
         // filter quotes by category and pushing relevant quotes into arrayOfQuotes
         json.forEach(({ category, text, author}) => {
+            //deconstructing the object makes it easier to select for properties without using bracket notation 
             // only select for quotes that are motivational/inspirational
             if (category === 'motivational' || category === 'inspirational'){
                 arrayOfQuotes.push(text);
@@ -38,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 // use addEventListeners to make duck quack when clicked on
+//taking a pre-exisiting HTML tag 
 const quackSound = document.querySelector("#quackSound");
 const quackBtn = document.querySelector(".quackBtn");
 quackBtn.addEventListener("click", () => quackSound.play());
@@ -50,8 +53,14 @@ quackItOutBtn.addEventListener("click", () => calmSound.play());
 // use addEventListeners - make quote bubble appear when "Need Inspiration?" button is clicked
 const needInspiration = document.querySelector('.needInspiration');
 needInspiration.addEventListener("click", () => {
-    quoteBubble.show();
+    window.open("https://developer.mozilla.org/en-US/", "_blank");
+    // document.getElementsByClassName(".quoteBubble").reset();
+    // quoteBubble.show();
+    // document.getElementsByClassName(".quoteBubble").reset();
 })
+
+// document.getElementById("myForm").reset();
+
 
 
 // stop calming sound audio file without refreshing page

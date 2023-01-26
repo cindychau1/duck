@@ -53,31 +53,7 @@ quackItOutBtn.addEventListener("click", () => calmSound.play());
 // use addEventListeners - make quote bubble appear when "Need Inspiration?" button is clicked
 const needInspiration = document.querySelector('.needInspiration');
 needInspiration.addEventListener("click", () => {
-    window.open("https://developer.mozilla.org/en-US/", "_blank");
-    // document.getElementsByClassName(".quoteBubble").reset();
-    // quoteBubble.show();
-    // document.getElementsByClassName(".quoteBubble").reset();
+    window.open("https://media.tenor.com/tnQGpjP5WEwAAAAC/utya-duck.gif", "_blank");
 })
 
-// document.getElementById("myForm").reset();
-
-
-
-// stop calming sound audio file without refreshing page
-// use addEventListeners to generates search links to mdn, stackoverflow, hard parts youtube, etc. when "let's quack it out" button is clicked 
 // BONUS: use addEventListeners to make duck quack repeatedly or use exploding duck gif when a non-productive website is clicked (productivity feature extension)
-
-
-// quack duck 
-// const quackDuck = () => {
-    //     remove pre-existing speech bubble art 
-    // access duck image by id 
-    // create new speech bubble 
-    //     id
-    //     class name 
-    //     innerHTML
-        
-    //     play the quack sound 
-    //     remove the speech bubble after time t 
-// }
-//search google 

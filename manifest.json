@@ -1,0 +1,12 @@
+{
+    "name": "Rubber Duck",
+    "version": "1.0.0",
+    "description": "This is an extension to use a rubber duck to help debug your code.",
+    "manifest_version": 3,
+    "author": "Anthony Vega, Cindy Chau",
+    "action": {
+        "default_icon": "cartoon-duck-transparent.png",
+        "default_popup": "index.html",
+        "default_title": "Rubber Duck"
+    }
+}

@@ -47,8 +47,16 @@ const calmSound = document.querySelector('#calmSound');
 const quackItOutBtn = document.querySelector(".quackItOutBtn");
 quackItOutBtn.addEventListener("click", () => calmSound.play());
 
-// use addEventListeners - generates search links to mdn, stackoverflow, hard parts youtube, etc. when "let's quack it out" button is clicked 
+// use addEventListeners - make quote bubble appear when "Need Inspiration?" button is clicked
+const needInspiration = document.querySelector('.needInspiration');
+needInspiration.addEventListener("click", () => {
+    quoteBubble.show();
+})
 
+
+// stop calming sound audio file without refreshing page
+// use addEventListeners to generates search links to mdn, stackoverflow, hard parts youtube, etc. when "let's quack it out" button is clicked 
+// BONUS: use addEventListeners to make duck quack repeatedly or use exploding duck gif when a non-productive website is clicked (productivity feature extension)
 
 
 // quack duck 
@@ -64,15 +72,3 @@ quackItOutBtn.addEventListener("click", () => calmSound.play());
     //     remove the speech bubble after time t 
 // }
 //search google 
-
-
-// create a new new for the author and append author div to the document next to quote div
-// create a "need inspiration?" button 
-    // use addEventListeners - make quote bubble appear when button is clicked
-// stop calming sound audio file without refreshing page
-// add manifest.json and add extension onto chrome
-// initialize github repo and add partner to access repo
-// BONUS: use addEventListeners to make duck quack repeatedly and/or use exploding duck gif when a non-productive website is clicked (productivity feature extension)
-
-
-

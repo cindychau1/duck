@@ -5,13 +5,13 @@
 
 h1 {
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 75px;
-    font-size: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 /* makes the background take up the whole page */
@@ -24,7 +24,7 @@ body {
     background-image: linear-gradient(to right top, #051937, #014369, #00739b, #00a6c7, #12dceb);
     color: white;
     font-family: sans-serif;
-    margin: 0 100px;
+    margin: 20px;
 }
 
 /* center the duck */
@@ -38,37 +38,51 @@ img {
     max-width: 100%;
     width: 400px;
     margin: 0 auto;
-    padding: 0;
 }
 
-/* style the quack button (encloses the duck itself) */
+/* style & animate the quack button (encloses the duck itself) */
 .quackBtn {
     background: transparent;
     border: none;
 }
-/* duck moves upwards when clicked  */
 .quackBtn:active {
-    transform: translateY(100px);
+    transform: translateY(50px);
     cursor: pointer;
 }
 
-/* style the quackItOutbutton */
+/* style & animate the quackItOutbutton */
 .quackItOutBtn {
-    padding: 30px;
+    padding: 10px;
     border-radius: 10px;
     background: white;
-    margin: 20px;
+    margin: 10px;
+}
+.quackItOutBtn:active {
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+/* style & animate the Need Inspiration? Btn */
+.needInspiration {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+.needInspiration:active {
+    transform: translateX(-10px);
+    cursor: pointer;
 }
 
 /* style quote background into speech bubble */
 .quoteBubble {
     background: white;
     color: black;
-    padding: 30px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 14px;
     font-family: sans-serif;
     border-radius: 10px;
     font-weight: bold;
-    margin: 20px;
-    max-width: 50%;
+    margin: 10px;
+    max-width: 100%;
+    text-align: center;
 }

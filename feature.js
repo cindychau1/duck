@@ -11,9 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // use async/await to fetch data from quote API
         const response = await fetch('https://famous-quotes4.p.rapidapi.com/random?category=all&count=999', options)
         // throw a response if the response yields an error
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
         //j.son() -> object 
         const json = await response.json();
         const arrayOfQuotes = [];
